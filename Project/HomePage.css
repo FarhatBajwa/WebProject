@@ -1,0 +1,50 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 5%;
+    background-image: url('https://wallpapercave.com/wp/wp2912709.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #002B5B;
+    font-family: Arial, sans-serif;
+}
+
+/* Page Title Styling */
+#name {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for Buttons */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Button Styling */
+.role-btn {
+    width: 300px;
+    padding: 1rem;
+    margin: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #002B5B;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects for Buttons */
+.role-btn:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}

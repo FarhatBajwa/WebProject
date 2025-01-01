@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Level Display -->
+        <div id="level-display">
+            <h2>Level: <span id="level">1</span></h2>
+        </div>
+
+        <!-- Math Problem Display -->
+        <div id="math-problem-container">
+            <div id="problem">Question will appear here.</div>
+            <div id="answer-box" class="answ2er-box" ondrop="handleDrop(event)" ondragover="allowDrop(event)">Drop the Answer Here</div>
+        </div>
+
+        <!-- Answer Options -->
+        <div id="answer-boxes-container">
+            <div id="answer1" class="answer-box" draggable="true"></div>
+            <div id="answer2" class="answer-box" draggable="true"></div>
+            <div id="answer3" class="answer-box" draggable="true"></div>
+            <div id="answer4" class="answer-box" draggable="true"></div>
+        </div>
+
+        <!-- Feedback -->
+        <div id="feedback-container">
+            <p id="feedback-message"></p>
+        </div>
+
+        <!-- Reward Message -->
+        <div id="reward-container">
+            <p id="reward-message">You got it right! Well done!</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

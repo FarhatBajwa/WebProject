@@ -1,0 +1,131 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpapercave.com/wp/wp2912709.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #002B5B;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the Login Form */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Login Title */
+.login-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #002B5B;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Styling */
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Labels */
+.login-form label {
+    font-size: 1.1rem;
+    color: #002B5B;
+    margin-bottom: 0.5rem;
+    text-align: left; /* Ensures labels align to the left */
+    margin-left: 10%;
+}
+
+/* Form Inputs */
+.login-form input {
+    width: 80%; /* Ensures proper spacing */
+    max-width: 350px; /* Prevents fields from being too wide */
+    padding: 0.8rem;
+    margin: 0 auto 1.2rem auto; /* Centers inputs */
+    border: 1px solid rgba(0, 43, 91, 0.5);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #002B5B;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Submit Button */
+.login-btn {
+    width: 80%; /* Matches input field width */
+    max-width: 350px; /* Ensures alignment with input fields */
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #002B5B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centers the button */
+}
+
+.login-btn:hover {
+    background-color: #005792;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Signup Link */
+.signup-link {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.signup-link a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .login-title {
+        font-size: 2rem;
+    }
+
+    .login-form input,
+    .login-btn {
+        font-size: 1rem;
+    }
+
+    .login-form label {
+        font-size: 1rem;
+        margin-left: 5%; /* Adjust label alignment for smaller screens */
+    }
+}
